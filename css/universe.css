@@ -80,3 +80,11 @@
     background-size: cover;
     background-repeat: no-repeat center;
 }
+
+[data-theme="light"] #page-header {
+    background: transparent !important;
+}
+
+[data-theme="dark"] #page-header {
+    background: transparent !important;
+}
