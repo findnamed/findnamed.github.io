@@ -11,7 +11,7 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 1;
+    z-index: -2;
 }
 
 #snow {
@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
     pointer-events: none;
-    z-index: 1;
+    z-index: -2;
 }
 
 /* 亮色模式下隐藏 */
@@ -83,8 +83,18 @@
 
 [data-theme="light"] #page-header {
     background: transparent !important;
+    z-index: -1 !important;
 }
 
 [data-theme="dark"] #page-header {
     background: transparent !important;
+    z-index: -1 !important;
+}
+
+/* [data-theme="dark"]--mark-bg {
+    opacity: 0.4 !important;
+} */
+
+[data-theme='dark'] {
+    --mark-bg: rgba(0, 0, 0, 0) !important;
 }
