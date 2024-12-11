@@ -24,6 +24,11 @@ function switchNightMode() {
         btf.saveToLocal.set('theme', 'dark', 2)
         // GLOBAL_CONFIG.Snackbar !== undefined && btf.snackbarShow(GLOBAL_CONFIG.Snackbar.day_to_night)
         document.getElementById('modeicon').setAttribute('xlink:href', '#icon-sun')
+
+
+        //js文件引入
+        localStorage.setItem("jsonPath", "/live2dw/assets/bronya.model.json")
+
         // 延时弹窗提醒
         // setTimeout(() => {
         //     new Vue({
@@ -52,6 +57,8 @@ function switchNightMode() {
         btf.activateLightMode()
         btf.saveToLocal.set('theme', 'light', 2)
         document.querySelector('body').classList.add('DarkMode'), document.getElementById('modeicon').setAttribute('xlink:href', '#icon-moon')
+
+        localStorage.setItem("jsonPath", "/live2dw/assets/Kobayaxi.model.json")
         // setTimeout(() => {
         //     new Vue({
         //         data: function () {

@@ -83,18 +83,15 @@
 
 [data-theme="light"] #page-header {
     background: transparent !important;
-    z-index: -1 !important;
+
 }
 
 [data-theme="dark"] #page-header {
     background: transparent !important;
-    z-index: -1 !important;
 }
 
-/* [data-theme="dark"]--mark-bg {
-    opacity: 0.4 !important;
-} */
+
 
 [data-theme='dark'] {
-    --mark-bg: rgba(0, 0, 0, 0) !important;
+    --mark-bg: rgba(0, 0, 0, 0.1) !important;
 }
