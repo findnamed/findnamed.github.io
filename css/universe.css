@@ -1,0 +1,95 @@
+/* 夜间模式下背景宇宙星光 */
+#universe {
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -2;
+}
+
+#snow {
+    display: block;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -2;
+}
+
+/* 亮色模式下隐藏 */
+[data-theme='light'] #universe {
+    display: none;
+}
+
+/* 暗色模式下隐藏 */
+[data-theme='dark'] #snow {
+    display: none;
+}
+
+/* 夜间模式遮罩 */
+[data-theme="dark"] #recent-posts>.recent-post-item,
+[data-theme="dark"] #aside-content .card-widget,
+[data-theme="dark"] div#post,
+[data-theme="dark"] div#archive,
+[data-theme="dark"] div#page {
+    background: var(--trans-dark);
+}
+
+/* 白天模式头图与页脚遮罩 */
+[data-theme="light"] #page-header:before,
+[data-theme="light"] #footer::before {
+    background-color: rgba(0, 0, 0, 0.18) !important;
+    z-index: -3;
+}
+
+#footer:before {
+    background-color: transparent !important;
+}
+
+#footer:after {
+    background-color: transparent !important;
+}
+
+#footer {
+    background-color: transparent !important;
+}
+
+[data-theme="dark"] #web_bg {
+    background-image: url(/img/startlight.jpg) !important;
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat center;
+}
+
+[data-theme="light"] #web_bg {
+    background-image: url(/img/light.webp) !important;
+    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat center;
+}
+
+[data-theme="light"] #page-header {
+    background: transparent !important;
+
+}
+
+[data-theme="dark"] #page-header {
+    background: transparent !important;
+}
+
+[data-theme='dark'] {
+    --mark-bg: rgba(0, 0, 0, 0.1) !important;
+}
