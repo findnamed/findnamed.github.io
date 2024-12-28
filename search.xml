@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Html基础1</title>
+      <link href="/2024/12/27/html-1/"/>
+      <url>/2024/12/27/html-1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="HTML基础"><a href="#HTML基础" class="headerlink" title="HTML基础"></a>HTML基础</h1><h2 id="HTML思维导图"><a href="#HTML思维导图" class="headerlink" title="HTML思维导图"></a>HTML思维导图</h2><p><img src="https://img.picui.cn/free/2024/12/28/676fdb64db769.png"></p><h2 id="HTML常见块级元素"><a href="#HTML常见块级元素" class="headerlink" title="HTML常见块级元素"></a>HTML常见块级元素</h2><p>常见的块级元素：<br><em><strong>&lt; h1 &gt;~&lt; h6 &gt;</strong></em><br><em><strong>&lt; p &gt;</strong></em><br><em><strong>&lt; div &gt;</strong></em><br><em><strong>&lt; ul &gt;</strong></em><br><em><strong>&lt; ol &gt;</strong></em><br><em><strong>&lt; li &gt;</strong></em><br><em><strong>&lt; dd &gt;</strong></em><br><em><strong>&lt; dt &gt;</strong></em><br><em><strong>&lt; dl &gt;</strong></em></p><p>块级元素的特点：<br>① 比较霸道，自己独占一行。<br>② 高度，宽度、外边距以及内边距都可以控制。<br>③ 宽度默认是容器（父级宽度）的100%。<br>④ 是一个容器及盒子，里面可以放行内或者块级元素。<br><em><strong>注意：</strong></em><br>文字类的元素内不能使用块级元素<br>&lt; p &gt; 标签主要用于存放文字，因此 &lt; p &gt; 里面不能放块级元素，特别是不能放&lt; div &gt;。<br>同理， &lt; h1 &gt;~&lt; h6 &gt;等都是文字类块级标签，里面也不能放其他块级元素</p><h2 id="HTML常见行内元素"><a href="#HTML常见行内元素" class="headerlink" title="HTML常见行内元素"></a>HTML常见行内元素</h2><p>常见的行内元素：<br> <em><strong>&lt; a &gt;</strong></em><br> <em><strong>&lt; strong &gt;</strong></em><br> <em><strong>&lt; b &gt;</strong></em><br> <em><strong>&lt; em &gt;</strong></em><br> <em><strong>&lt; i &gt;</strong></em><br> <em><strong>&lt; del &gt;</strong></em><br> <em><strong>&lt; s &gt;</strong></em><br><em><strong>&lt; ins &gt;</strong></em><br><em><strong>&lt; u &gt;</strong></em><br><em><strong>&lt; span &gt;</strong></em><br><em><strong>&lt; img &#x2F;&gt;</strong></em><br><em><strong>&lt; input &#x2F;&gt;</strong></em><br><em><strong>&lt; select &gt;</strong></em><br><em><strong>&lt; textarea &gt;</strong></em><br><em><strong>&lt; br &#x2F;&gt;</strong></em></p><p>行内元素的特点：<br>① 相邻行内元素在一行上，一行可以显示多个。<br>② 高、宽直接设置是无效的。<br>③ 默认宽度就是它本身内容的宽度。<br>④ 行内元素只能容纳文本或其他行内元素。<br><em><strong>注意：</strong></em><br>1.链接里面不能再放链接<br>2.特殊情况链接 &lt; a &gt; 里面可以放块级元素，但是给 &lt; a &gt; 转换一下块级模式最安全</p><h2 id="HTML常见行内块元素"><a href="#HTML常见行内块元素" class="headerlink" title="HTML常见行内块元素"></a>HTML常见行内块元素</h2><p>常见的行内块元素：<br><em><strong>&lt; img &#x2F;&gt;</strong></em><br><em><strong>&lt; input &#x2F;&gt;</strong></em><br><em><strong>&lt; td &gt;</strong></em></p><p>行内块元素的特点：<br>① 和相邻行内元素（行内块）在一行上，但是他们之间会有空白缝隙。一行可以显示多个（行内元素特点）。<br>② 默认宽度就是它本身内容的宽度（行内元素特点）。<br>③ 高度，行高、外边距以及内边距都可以控制（块级元素特点）</p><h2 id="HTML元素转换"><a href="#HTML元素转换" class="headerlink" title="HTML元素转换"></a>HTML元素转换</h2><p>转换为块元素：display:block;<br>转换为行内元素：display:inline;<br>转换为行内块元素：display: inline-block;</p><h2 id="元素"><a href="#元素" class="headerlink" title="元素"></a>元素</h2><table><thead><tr><th align="left">元素模式</th><th align="center">元素排列</th><th align="center">设置样式</th><th align="center">默认宽度</th><th align="center">包含</th></tr></thead><tbody><tr><td align="left">块级元素</td><td align="center">一行只能放一个块级元素</td><td align="center">可以设置宽度高度</td><td align="center">容器的100%</td><td align="center">容器级可以包含的任何标签</td></tr><tr><td align="left">行内元素</td><td align="center">一行可以放多个行内元素</td><td align="center">不可以设置宽度高度</td><td align="center">它本身内容的宽度</td><td align="center">容纳文本或其他行内元素</td></tr><tr><td align="left">行内块元素</td><td align="center">一行可以放多个行内块元素</td><td align="center">可以设置宽度高度</td><td align="center">它本身内容的宽度</td><td align="center"></td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 前端 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Html </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript 基础1</title>
       <link href="/2024/12/18/js-1/"/>
       <url>/2024/12/18/js-1/</url>
