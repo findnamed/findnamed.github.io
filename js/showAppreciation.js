@@ -1,5 +1,6 @@
 const data = [
     { name: 'StarLess', money: '5.20', date: '2099/12/31' },
+    { name: '陳好人', money: '0.01', date: '2025/03/04' },
 ];
 
 (function () {
